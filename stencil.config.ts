@@ -7,7 +7,7 @@ export const config: Config = {
   bundles: [{ components: ['my-component'] }, { components: ['my-button'] }],
   outputTargets: [
     reactOutputTarget({
-      componentCorePackage: 'ice-component-react  ',
+      componentCorePackage: 'ice-component-react',
       proxiesFile: '../ice-component-react/src/components.d.ts',
     }),
   ],
