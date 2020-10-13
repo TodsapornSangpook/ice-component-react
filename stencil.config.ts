@@ -1,9 +1,19 @@
 import { Config } from '@stencil/core';
+import { reactOutputTarget } from '@stencil/react-output-target';
 
 export const config: Config = {
   namespace: 'ice-component-react',
   srcDir: 'src',
-  // bundles: [{ components: ['my-component'] }, { components: ['my-button'] }],
+  bundles: [{ components: ['my-component'] }, { components: ['my-button'] }],
+  outputTargets: [
+    reactOutputTarget({
+      componentCorePackage: 'ice-component-react',
+      proxiesFile: '../ice-component-react/src/components.ts',
+    }),
+    {
+      type: 'dist',
+    },
+  ],
   // outputTargets: [
   //   {
   //     type: 'dist',
