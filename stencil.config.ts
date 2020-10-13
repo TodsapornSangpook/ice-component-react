@@ -7,9 +7,9 @@ export const config: Config = {
   bundles: [{ components: ['my-component'] }, { components: ['my-button'] }],
   outputTargets: [
     reactOutputTarget({
-      componentCorePackage: 'test',
-      proxiesFile: '../ice-component-react/dist/types/components.d.ts',
-      // proxiesFile: '../ice-component-react/dist/index.js',
+      componentCorePackage: 'ice-component-react',
+      proxiesFile: '../ice-component-react/dist/index.tsx',
+      // proxiesFile: '../ice-component-react/dist/types/components.d.ts',
       // proxiesFile: '../ice-component-react/src/components.d.ts',
     }),
   ],
