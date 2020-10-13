@@ -1,4 +1,4 @@
-import { Config, h } from '@stencil/core';
+import { Config } from '@stencil/core';
 import { reactOutputTarget } from '@stencil/react-output-target';
 
 export const config: Config = {
@@ -7,7 +7,7 @@ export const config: Config = {
   bundles: [{ components: ['my-component'] }, { components: ['my-button'] }],
   outputTargets: [
     reactOutputTarget({
-      componentCorePackage: 'ice-component-react',
+      componentCorePackage: 'test',
       proxiesFile: '../ice-component-react/dist/types/components.d.ts',
       // proxiesFile: '../ice-component-react/dist/index.js',
       // proxiesFile: '../ice-component-react/src/components.d.ts',
