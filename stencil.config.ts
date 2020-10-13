@@ -8,7 +8,9 @@ export const config: Config = {
   outputTargets: [
     reactOutputTarget({
       componentCorePackage: 'ice-component-react',
-      proxiesFile: '../ice-component-react/src/components.d.ts',
+      proxiesFile: '../ice-component-react/dist/types/components.d.ts',
+      // proxiesFile: '../ice-component-react/dist/index.js',
+      // proxiesFile: '../ice-component-react/src/components.d.ts',
     }),
   ],
   // outputTargets: [
