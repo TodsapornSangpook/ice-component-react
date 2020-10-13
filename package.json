@@ -25,10 +25,15 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@stencil/core": "^2.0.1"
+    "@stencil/core": "^2.0.1",
+    "@types/node": "^14.11.8",
+    "@types/react": "^16.9.52",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "license": "MIT",
   "devDependencies": {
-    "@stencil/react-output-target": "0.0.9"
+    "@stencil/react-output-target": "0.0.9",
+    "workbox-build": "^4.3.1"
   }
 }
