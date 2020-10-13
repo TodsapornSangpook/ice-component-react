@@ -2,7 +2,7 @@ import { Config } from '@stencil/core';
 
 export const config: Config = {
   namespace: 'ice-component-react',
-  bundles: [{ components: ['my-component', 'my-button'] }],
+  // bundles: [{ components: ['my-component', 'my-button'] }],
   outputTargets: [
     {
       type: 'dist',
